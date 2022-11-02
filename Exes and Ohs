@@ -1,0 +1,12 @@
+function XO(str) {
+  let countX = 0;
+  let countO = 0;
+  for (let letter of str) {
+    if (letter.toUpperCase() === 'X') {
+      countX++;
+    } else if (letter.toUpperCase() === 'O') {
+      countO++;
+    }
+  }
+  return countX === countO;
+}
