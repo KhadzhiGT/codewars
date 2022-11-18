@@ -1,0 +1,10 @@
+function findShort(s){
+  s = s.split(' ');
+  let smallWord = s[0];
+  for (word of s){
+    if (word.length < smallWord.length) {
+      smallWord = word;
+    }
+  }
+  return smallWord.length;
+}
